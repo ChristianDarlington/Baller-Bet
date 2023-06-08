@@ -2,12 +2,13 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='max-w-[1400px] h-[800px] bg-gray-200 mx-auto my-20 pt-16 lg:mb-[20%] md:mb-[35%] px-4 grid lg:grid-cols-3 gap-4'>
+    <div id='about' className='max-w-[1400px] h-[550px] bg-gray-200 mx-auto my-20 pt-16 lg:mb-[20%] md:mb-[35%] px-4 grid lg:grid-cols-3 gap-4'>
     <div className='lg:top-20 relative lg:col-span-1 col-span-2'>
       <h3 className='text-2xl font-bold'>Easy Betting System</h3>
       <p className='pt-4'>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error ipsam
-        rerum iusto excepturi similique minus?
+      One of the key features of our app is the user-friendly interface, designed to make your betting experience seamless and enjoyable. 
+      From intuitive navigation to easy-to-understand bet placement, we strive to provide a hassle-free experience for both novice and experienced bettors. 
+      Our app is optimized for mobile devices, allowing you to bet on the go, anytime, anywhere.
       </p>
     </div>
 

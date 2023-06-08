@@ -6,7 +6,7 @@ const ImageSlider = () => {
 
   const slides = [
     {
-      url: 'https://codewithfaraz.com/img/html,%20css%20and%20javascript%20creating%20an%20animated%20dual%20login%20signup%20form%20that%20delights%20users.jpg',
+      url: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6f998234431327.56d02b9c57f25.png',
       title: 'Signup',
     },
     {
@@ -42,7 +42,7 @@ const ImageSlider = () => {
   }
 
   return (
-    <div className='max-w-[1440px] h-[780px] w-full m-auto py-16 px-4 relative group'>
+    <div className='max-w-[1000px] h-[780px] w-full m-auto py-16 px-4 relative group'>
       <div className='w-full rounded-2xl h-full bg-center bg-cover duration-500' style={{backgroundImage: `url(${slides[currentIndex].url})`}}>
       </div>
       {/* left arrow */}
@@ -55,8 +55,12 @@ const ImageSlider = () => {
       </div>
 
     <div className='flex top-4 justify-center py-2'>
-        {slides.map((slide, slideIndex) => (
-          <RxDotFilled />
+        {slides.map((slide, slideIndex) => 
+          (
+            <div className='text-2xl cursor-pointer' key={slideIndex} onClick={() => goToSlide(slideIndex)}>
+              <RxDotFilled />
+            </div>
+        
         ))}
     </div>
 
